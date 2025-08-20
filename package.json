@@ -5,15 +5,15 @@
     "anchor-build": "cd anchor && anchor build",
     "anchor-localnet": "cd anchor && anchor localnet",
     "anchor-test": "cd anchor && anchor test",
-    "build": "next build",
+    "build": "node init && next build",
     "codama:js": "codama run js -c ./anchor/codama.js",
     "ci": "npm run build && npm run lint && npm run format:check && npm run codama:js",
-    "dev": "next dev --turbopack",
+    "dev": "node init && next dev --turbopack",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "next lint",
     "setup": "npm run anchor keys sync && npm run codama:js",
-    "start": "next start"
+    "start": "node init && next start"
   },
   "description": "Next.js, Tailwind, Anchor Counter example, gill (based on @solana/kit), Wallet UI",
   "keywords": [

@@ -10,6 +10,9 @@ name = "tokenvesting"
 
 [features]
 default = []
+anchor-debug = [] 
+custom-heap = []
+custom-panic = []
 cpi = ["no-entrypoint"]
 no-entrypoint = []
 no-idl = []
@@ -20,5 +23,4 @@ idl-build = ["anchor-lang/idl-build","anchor-spl/idl-build"]
 [dependencies]
 anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
 anchor-spl = "0.31.1"
-solana-program = "2.3.0"
 
