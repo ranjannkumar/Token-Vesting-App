@@ -26,8 +26,7 @@ pub mod tokenvesting {
 
         Ok(())
     }
-
-// Creates a vesting schedule for a specific employee.
+  // Creates a vesting schedule for a specific employee.
  pub fn create_employee_vesting(
         ctx: Context<CreateEmployeeAccount>,
         start_time: i64,
